@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: white;
+  background-color: #F0E6D2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ body {
 
 .app-bar {
   padding: 8px 16px;
-  background-color: white;
+  background-color: #34404A;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
@@ -35,7 +35,7 @@ body {
 .app-bar .app-bar__menu button {
   background-color: transparent;
   border: none;
-  font-size: 18px;
+  font-size: 22px;
   padding: 8px;
   cursor: pointer;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .app-bar .app-bar__brand h1 {
-  color: #db0000;
+  color: #F0E6D2;
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
@@ -59,7 +59,7 @@ body {
   width: 150px;
   transition: all 0.3s;
   padding: 8px;
-  background-color: white;
+  background-color: #34404A;
   overflow: hidden;
 }
 
@@ -70,7 +70,7 @@ body {
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: #F0E6D2;
   padding: 8px;
   margin-bottom: 5px;
   width: 100%;
@@ -99,7 +99,7 @@ main {
   Movies
 */
 
-.movies {
+.restos {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -110,52 +110,43 @@ main {
   Movie Item
 */
 
-.movie-item {
+.resto-item {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
+  background-color: #ffff;
 }
 
-.movie-item__header {
+.resto-item__header {
   position: relative;
 }
 
-.movie-item .movie-item__header .movie-item__header__poster {
+.resto-item .resto-item__header .resto-item__header__poster {
   width: 100%;
 }
-
-/* .movie-item .movie-item__header .movie-item__header__rating {
-  position: absolute;
-  padding: 8px;
-  bottom: 20px;
-  left: 0;
-  display: inline-block;
-  background-color: black;
-  color: white;
-} */
 
 .rating{
   margin-bottom: 10px;
 }
-.movie-item .movie-item__header .movie-item__header__rating .movie-item__header__rating__score {
+.resto-item .resto-item__header .resto-item__header__rating .resto-item__header__rating__score {
   margin-left: 10px;
 }
 
-.movie-item .movie-item__content {
+.resto-item .resto-item__content {
   padding: 16px;
 }
 
-.movie-item .movie-item__content h3 {
+.resto-item .resto-item__content h3 {
   margin: 0 0 0 0;
 }
 
-.movie-item .movie-item__content h3 a {
-  color: #db0000;
+.resto-item .resto-item__content h3 a {
+  color: #025F4C;
   text-decoration: none;
 }
 
-.movie-item .movie-item__content p {
+.resto-item .resto-item__content p {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -164,10 +155,10 @@ main {
 }
 
 /*
-  Movie
+  Resto
 */
 
-.movie {
+.resto {
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
@@ -176,13 +167,32 @@ main {
   gap: 18px 16px;
 }
 
-.movie .movie__poster {
+.resto .resto__poster {
   width: 100%;
   max-width: 400px;
 }
 
-.movie .movie__info h4 {
+.resto .resto__info h4 {
   margin: 8px 0;
+}
+
+.skip-link {
+  position: absolute;
+  height: auto;
+  top: -40px;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 0;
+}
+
+.skip-link:focus{
+  top: 10px;
+  left: 10px;
+}
+
+.nav-link{
+  font-size: 20px;
 }
 
 
@@ -192,6 +202,7 @@ main {
 
 footer {
   padding: 16px;
+  background-color: #025F4C;
 }
 
 footer p {
@@ -200,7 +211,7 @@ footer p {
 }
 
 footer p a {
-  color: #db0000;
+  color: #F0E6D2;
   text-decoration: none;
 }
 

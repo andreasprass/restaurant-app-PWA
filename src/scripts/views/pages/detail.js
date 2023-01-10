@@ -6,7 +6,7 @@ import LikeButtonInitiator from '../../utils/like-button-initiator';
 const Detail = {
   async render() {
     return `
-      <div id="movie" class="movie"></div>
+      <div id="resto" class="resto"></div>
       <div id="likeButtonContainer"></div>
     `;
   },
@@ -15,8 +15,8 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const resto = await TheMovieDbSource.detailRestaurant(url.id);
     console.log(resto);
-    const movieContainer = document.querySelector('#movie');
-    movieContainer.innerHTML = createRestaurantDetailTemplate(resto);
+    const restoContainer = document.querySelector('#resto');
+    restoContainer.innerHTML = createRestaurantDetailTemplate(resto);
 
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),

@@ -5,8 +5,8 @@ const List = {
   async render() {
     return `
       <div class="content">
-        <h2 class="content__heading">Now Playing in Cinema</h2>
-        <div id="movies" class="movies">
+        <h2 class="content__heading">Restaurant List</h2>
+        <div id="restos" class="restos">
 
         </div>
       </div>
@@ -15,9 +15,9 @@ const List = {
 
   async afterRender() {
     const restaurants = await TheMovieDbSource.listRestaurants();
-    const moviesContainer = document.querySelector('#movies');
+    const restaurantContainer = document.querySelector('#restos');
     restaurants.forEach((resto) => {
-      moviesContainer.innerHTML += createRestaurantListTemplate(resto);
+      restaurantContainer.innerHTML += createRestaurantListTemplate(resto);
     });
   },
 };

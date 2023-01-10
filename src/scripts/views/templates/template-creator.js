@@ -1,12 +1,12 @@
 import CONFIG from '../../globals/config';
 
 const createRestaurantListTemplate = (restaurants) => `
-<div class="movie-item">
-<div class="movie-item__header">
-  <img class="movie-item__header__poster" alt="${restaurants.name}"
+<div class="resto-item">
+<div class="resto-item__header">
+  <img class="resto-item__header__poster" alt="${restaurants.name}"
       src="${restaurants.pictureId ? CONFIG.BASE_IMAGE_URL + restaurants.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}">
 </div>
-<div class="movie-item__content">
+<div class="resto-item__content">
   <h5>${restaurants.city}</h5>
   <h3><a href="/#/detail/${restaurants.id}">${restaurants.name}</a></h3><p class="rating">Rating ⭐️ ${restaurants.rating}</p>
   <p>${restaurants.description}</p>
@@ -15,11 +15,11 @@ const createRestaurantListTemplate = (restaurants) => `
 `;
 
 const createRestaurantDetailTemplate = (resto) => `
-  <h2 class="movie__title">${resto.name}</h2>
+  <h2 class="resto__title">${resto.name}</h2>
 
-  <img class="movie__poster" src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : resto.pictureId}" />
+  <img class="resto__poster" src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : resto.pictureId}" />
   
-  <div class="movie__info">
+  <div class="resto__info">
     <h3>Restaurant Details</h3>
       <h4>Rating</h4>
       <p>⭐️ ${resto.rating}</p>
@@ -29,12 +29,12 @@ const createRestaurantDetailTemplate = (resto) => `
       <p>${resto.address}</p>
   </div>
 
-  <div class="movie__overview">
+  <div class="resto__overview">
     <h3>Overview</h3>
     <p>${resto.description}</p>
   </div>
 
-  <div class="movie__foods">
+  <div class="resto__overview">
     <h3>Menu</h3>
     <p>
       ${resto.menus.foods.map((food) => `
@@ -44,7 +44,7 @@ const createRestaurantDetailTemplate = (resto) => `
     </p>
   </div>
 
-  <div class="movie__drinks">
+  <div class="resto__overview">
     <h3>Drink</h3>
     <p>
       ${resto.menus.drinks.map((drink) => `
@@ -54,7 +54,7 @@ const createRestaurantDetailTemplate = (resto) => `
     </p>
   </div>
 
-  <div class="customer__reviews">
+  <div class="resto__overview">
     <h3>Review</h3>
     <p class="customer__name>
       ${resto.customerReviews.map((review) => `
@@ -67,13 +67,13 @@ const createRestaurantDetailTemplate = (resto) => `
 `;
 
 const createLikeButtonTemplate = () => `
-  <button aria-label="like this movie" id="likeButton" class="like">
+  <button aria-label="like this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
 const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this movie" id="likeButton" class="like">
+  <button aria-label="unlike this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;
