@@ -74,6 +74,7 @@ body {
   padding: 8px;
   margin-bottom: 5px;
   width: 100%;
+  font-size: 20px;
 }
 
 .hero {
@@ -201,22 +202,23 @@ main {
   margin: 8px 0;
 }
 
-.skip-link {
+.skip_link{
   position: absolute;
   height: auto;
   top: -40px;
   background-color: #bf1722;
-  color: white;
   padding: 8px;
-  z-index: 0;
+  z-index: 2;
 }
 
-.skip-link:focus{
-  top: 10px;
-  left: 10px;
+.skip_link:focus{
+  margin: 55px 0 0 20px;
+  text-decoration: none;
+  color: white;
 }
 
-.nav-link{
+
+.nav-content{
   font-size: 20px;
 }
 

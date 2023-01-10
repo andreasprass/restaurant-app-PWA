@@ -46,21 +46,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
-
-  .skip-link {
-    position: absolute;
-    height: auto;
-    top: -40px;
-    background-color: #bf1722;
-    color: white;
-    padding: 8px;
-    z-index: 0;
-  }
-  
-  .skip-link:focus{
-    top: 10px;
-    left: 10px;
-  }
 }
 
 @media screen and (min-width: 800px) {

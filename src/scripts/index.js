@@ -8,6 +8,7 @@ const app = new App({
   button: document.querySelector('#hamburgerButton'),
   drawer: document.querySelector('#navigationDrawer'),
   content: document.querySelector('#mainContent'),
+  skip: document.querySelector('#skip_content'),
 });
 
 window.addEventListener('hashchange', () => {
@@ -17,4 +18,10 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
+});
+
+const skipToContent = document.querySelector('.skip_link');
+skipToContent.addEventListener('click', (event) => {
+  event.preventDefault();
+  document.querySelector('#mainContent').focus();
 });

@@ -3,7 +3,7 @@ const CONFIG = {
   BASE_URL: 'https://restaurant-api.dicoding.dev/',
   BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/medium/',
   DEFAULT_LANGUAGE: 'en-us',
-  CACHE_NAME: 'RestoCatalogue-V1',
+  CACHE_NAME: 'RestoCatalogue-V3',
   DATABASE_NAME: 'resto-catalogue-database',
   DATABASE_VERSION: 1,
   OBJECT_STORE_NAME: 'resto',

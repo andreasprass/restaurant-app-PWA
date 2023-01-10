@@ -4,6 +4,7 @@ import { createRestaurantDetailTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
+
   async render() {
     return `
       <div id="resto" class="resto"></div>
