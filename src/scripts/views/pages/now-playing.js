@@ -1,17 +1,16 @@
 import TheMovieDbSource from '../../data/themoviedb-source';
 import { createRestaurantListTemplate } from '../templates/template-creator';
 
+const url = 'hero-image.jpg';
+console.log(url);
+
 const List = {
   async render() {
     return `
       <div class="hero">
-        <div class="hero__inner">
-          <h1 class="hero__title">Bangun Karirmu Sebagai Developer Profesional</h1>
-          <p class="hero__tagline">Jadilah tuan rumah di negeri sendiri dengan belajar langsung dari para inovator dan
-            developer expert</p>
-        </div>
+          <img src="${url}">
       </div>
-      <div class="content">
+      <div class="content" id="mainContent">
         <h2 class="content__heading">Restaurant List</h2>
         <div id="restos" class="restos">
         
