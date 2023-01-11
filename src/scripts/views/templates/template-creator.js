@@ -3,7 +3,7 @@ import CONFIG from '../../globals/config';
 const createRestaurantListTemplate = (restaurants) => `
 <div class="resto-item">
 <div class="resto-item__header">
-  <img class="resto-item__header__poster" alt="${restaurants.name}"
+  <img class="resto-item__header__poster" alt="${restaurants.name} image"
       src="${restaurants.pictureId ? CONFIG.BASE_IMAGE_URL + restaurants.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}">
 </div>
 <div class="resto-item__content">

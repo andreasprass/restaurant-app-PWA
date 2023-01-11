@@ -30,12 +30,16 @@ body {
 .app-bar .app-bar__menu {
   display: flex;
   align-items: center;
+  height: 44px;
+  width: 44px;
 }
 
 .app-bar .app-bar__menu button {
   background-color: transparent;
   border: none;
-  font-size: 22px;
+  font-size: 25px;
+  color: #F0E6D2;
+  width: 200%;
   padding: 8px;
   cursor: pointer;
 }
@@ -165,6 +169,7 @@ main {
 
 .resto-item .resto-item__content h3 {
   margin: 0 0 0 0;
+  font-size: 35px;
 }
 
 .resto-item .resto-item__content h3 a {

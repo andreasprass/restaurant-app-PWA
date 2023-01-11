@@ -9,7 +9,7 @@ const List = {
   async render() {
     return `
       <div class="hero">
-          <img src="${url}">
+          <img src="${url}" alt="resto-poster">
       </div>
       <div class="content" id="homeKonten">
         <h2 class="content__heading">Restaurant List</h2>

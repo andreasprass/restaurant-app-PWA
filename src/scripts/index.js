@@ -19,9 +19,3 @@ window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
 });
-
-const skipToContent = document.querySelector('.skip_link');
-skipToContent.addEventListener('click', (event) => {
-  event.preventDefault();
-  document.querySelector('#mainContent').focus();
-});
